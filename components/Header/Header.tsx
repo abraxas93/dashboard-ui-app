@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
-const Header = () => {
+export const Header = () => {
   return (<div className="box-border h-34 bg-white shadow">
     <div className="mx-auto max-w-7xl pt-4 px-4">
       <div className="flex items-center justify-between px-5 py-2">
@@ -27,12 +28,12 @@ const Header = () => {
         </div>
       </div>
       <div className="h-18 box-border px-5 flex space-x-8">
-        <a href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black" aria-current="page">Community</a>
-        <a href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">classNameroom</a>
-        <a href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Calendar</a>
-        <a href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Members</a>
-        <a href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Leaderboards</a>
-        <a href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">About</a>
+        <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black" aria-current="page">Community</Link>
+        <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">classNameroom</Link>
+        <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Calendar</Link>
+        <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Members</Link>
+        <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Leaderboards</Link>
+        <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">About</Link>
       </div>
     </div>
   </div>)
