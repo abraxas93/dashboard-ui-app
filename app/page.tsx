@@ -1,3 +1,4 @@
+import cn from 'classnames'; 
 import Image from "next/image";
 import { Text } from "@/components/Text/Text";
 
@@ -7,14 +8,13 @@ export default function Home() {
       <div className="sign-in-form">
         <div className="card-header flex items-center flex-col gap-3"> 
           <Image
-            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
             src="/ai.svg"
             alt="Next.js Logo"
             width={75}
             height={75}
             priority
           />
-          <Text title="Sign in to your account"></Text>
+          <Text title="Sign in to your account" className='py-1'></Text>
           <Text text="Dont have an account?"></Text>
         </div>
       </div>

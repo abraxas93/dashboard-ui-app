@@ -1,4 +1,6 @@
-import { FC } from 'react'
+import { FC } from 'react';
+import cn from 'classnames'; 
+import cls from './Text.module.css';
 
 type TextProps = {
   title?: string;
@@ -22,8 +24,11 @@ export const Text: FC<TextProps> = (props) => {
 
   const { title, text, size = 'm', className, bold } = props;
   const HeaderTag = mapSizeToHeaderTag[size];
+
+  const additionalClasses = [className];
+
   return (
-    <div>
+    <div className={cn(cls.text, additionalClasses)}>
       {title && (
         <HeaderTag>
           {title}
