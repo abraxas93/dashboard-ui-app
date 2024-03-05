@@ -1,3 +1,4 @@
+import cn from 'classnames';
 import { FC, InputHTMLAttributes, ReactNode } from "react";
 
 
@@ -22,9 +23,9 @@ interface InputProps extends HTMLInputProps {
 
 
 export const Input: FC<InputProps> = (props) => {
-  const {label, placeholder} = props;
+  const {label, placeholder, className} = props;
   return (
-    <div className='flex flex-col'>
+    <div className={cn("flex flex-col w-full", className)}>
       <div>{label}</div>
       <input className="border rounded border-gray-300 p-2" placeholder={placeholder}/>
     </div>
