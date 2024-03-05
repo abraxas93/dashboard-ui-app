@@ -16,6 +16,14 @@ export default function Home() {
           />
           <Text title="Sign in to your account" className='text-lg font-semibold pt-2'></Text>
           <Text text="Dont have an account?" className='text-gray-500 text-sm'></Text>
+          <div className='flex flex-col'>
+            <div>Label</div>
+            <input />
+          </div>
+          <div className='flex'>
+            <div>Label</div>
+            <input />
+          </div>
         </div>
       </div>
     </main>
