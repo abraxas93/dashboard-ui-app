@@ -7,7 +7,6 @@ type TextProps = {
   text?: string;
   className?: string;
   size?: TextSize;
-  bold?: boolean;
 }
 
 export type TextSize = 's' | 'm' | 'l';
@@ -22,7 +21,7 @@ const mapSizeToHeaderTag: Record<TextSize, HeaderTagType> = {
 
 export const Text: FC<TextProps> = (props) => {
 
-  const { title, text, size = 'm', className, bold } = props;
+  const { title, text, size = 'm', className } = props;
   const HeaderTag = mapSizeToHeaderTag[size];
 
   const additionalClasses = [className];
