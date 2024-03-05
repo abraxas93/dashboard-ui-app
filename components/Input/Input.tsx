@@ -1,4 +1,4 @@
-import { InputHTMLAttributes, ReactNode } from "react";
+import { FC, InputHTMLAttributes, ReactNode } from "react";
 
 
 type HTMLInputProps = Omit<
@@ -21,11 +21,12 @@ interface InputProps extends HTMLInputProps {
 }
 
 
-export const Input = () => {
+export const Input: FC<InputProps> = (props) => {
+  const {label, placeholder} = props;
   return (
     <div className='flex flex-col'>
-      <div>Label</div>
-      <input />
+      <div>{label}</div>
+      <input className="border rounded border-gray-300 p-2" placeholder={placeholder}/>
     </div>
   )
 }

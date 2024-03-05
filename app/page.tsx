@@ -1,6 +1,7 @@
 import cn from 'classnames'; 
 import Image from "next/image";
 import { Text } from "@/components/Text/Text";
+import { Input } from '@/components/Input';
 
 export default function Home() {
   return (
@@ -16,14 +17,8 @@ export default function Home() {
           />
           <Text title="Sign in to your account" className='text-lg font-semibold pt-2'></Text>
           <Text text="Dont have an account?" className='text-gray-500 text-sm'></Text>
-          <div className='flex flex-col'>
-            <div>Label</div>
-            <input />
-          </div>
-          <div className='flex'>
-            <div>Label</div>
-            <input />
-          </div>
+          <Input label='Email' placeholder='you@example.com'/>
+          <Input label='Password' placeholder='Password'/>
         </div>
       </div>
     </main>
