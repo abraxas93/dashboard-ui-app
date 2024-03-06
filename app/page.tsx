@@ -17,8 +17,8 @@ export default function Home() {
           />
           <Text title="Sign in to your account" className='text-lg font-semibold pt-2'></Text>
           <Text text="Dont have an account?" className='text-gray-500 text-sm'></Text>
-          <Input label='Email' className='pb-2' placeholder='you@example.com'/>
-          <Input label='Password' className='pb-2' placeholder='Password'/>
+          <Input label="Email" placeholder="you@example.com"/>
+          <Input label="Password" placeholder="Password"/>
         </div>
       </div>
     </main>
