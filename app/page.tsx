@@ -6,7 +6,7 @@ import { Input } from '@/components/Input';
 export default function Home() {
   return (
     <main className="flex justify-center items-center h-screen">
-      <div className="flex flex-col min-w-96 gap-3">
+      <div className="flex flex-col w-80 gap-3">
         <div className="card-header flex items-center flex-col gap-2">
           <Image
             src="/ai.svg"
