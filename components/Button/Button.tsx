@@ -10,15 +10,16 @@ import cn from 'classnames'
 
 export type ButtonVariant = 'clear' | 'outline' | 'filled';
 export type ButtonColor = 'normal' | 'success' | 'error';
-export type ButtonSize = 'm' | 'l' | 'xl';
+export type ButtonSize = 's' | 'm' | 'l' | 'xl';
 
 const varianStyles: Record<ButtonVariant, string> = {
-  filled: 'font-semibold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50',
+  filled: 'bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50',
   outline: 'border border-primary text-primary',
-  clear: 'text-primary',
+  clear: 'bg-gray-200 text-gray-700 py-2 px-4 rounded',
 }
 
 const sizeStyles: Record<ButtonSize, string> = {
+  s: 'text-sm',
   m: 'text-base',
   l: 'text-lg',
   xl: 'text-xl', 
@@ -65,7 +66,6 @@ export const Button = forwardRef(
             className,
             varianStyles[variant],
             sizeStyles[size],
-            colorStyles[color],
             {"w-full": fullWidth}
         )}
         disabled={disabled}
