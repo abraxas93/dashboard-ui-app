@@ -24,6 +24,12 @@ const sizeStyles: Record<ButtonSize, string> = {
   xl: "text-xl", 
 }
 
+const colorStyles: Record<ButtonColor, string> = {
+  normal: "bg-white text-black",
+  success: "bg-green-500 text-white",
+  error: "bg-red-500 text-white",
+}
+
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   variant?: ButtonVariant;
@@ -59,7 +65,7 @@ const Button = forwardRef(
             className,
             varianStyles[variant],
             sizeStyles[size],
-            cls[color],
+            colorStyles[color],
         )}
         disabled={disabled}
         {...otherProps}
