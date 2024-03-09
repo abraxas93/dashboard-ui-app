@@ -18,6 +18,12 @@ const varianStyles: Record<ButtonVariant, string> = {
   clear: 'text-primary',
 }
 
+const sizeStyles: Record<ButtonSize, string> = {
+  m: "text-base",
+  l: "text-lg",
+  xl: "text-xl", 
+}
+
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
   variant?: ButtonVariant;
@@ -49,12 +55,12 @@ const Button = forwardRef(
   return (
     <button
         type="button"
-        className={cn(cls.Button, mods, [
+        className={cn(
             className,
-            cls[variant],
-            cls[size],
+            varianStyles[variant],
+            sizeStyles[size],
             cls[color],
-        ])}
+        )}
         disabled={disabled}
         {...otherProps}
         ref={ref}
