@@ -66,6 +66,7 @@ export const Button = forwardRef(
             varianStyles[variant],
             sizeStyles[size],
             colorStyles[color],
+            {"w-full": fullWidth}
         )}
         disabled={disabled}
         {...otherProps}
