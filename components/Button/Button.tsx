@@ -13,21 +13,21 @@ export type ButtonColor = 'normal' | 'success' | 'error';
 export type ButtonSize = 'm' | 'l' | 'xl';
 
 const varianStyles: Record<ButtonVariant, string> = {
-  filled: 'bg-primary text-white',
+  filled: 'font-semibold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50',
   outline: 'border border-primary text-primary',
   clear: 'text-primary',
 }
 
 const sizeStyles: Record<ButtonSize, string> = {
-  m: "text-base",
-  l: "text-lg",
-  xl: "text-xl", 
+  m: 'text-base',
+  l: 'text-lg',
+  xl: 'text-xl', 
 }
 
 const colorStyles: Record<ButtonColor, string> = {
-  normal: "bg-white text-black",
-  success: "bg-green-500 text-white",
-  error: "bg-red-500 text-white",
+  normal: 'bg-blue-500 text-white',
+  success: 'bg-green-500 text-white',
+  error: 'bg-red-500 text-white',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

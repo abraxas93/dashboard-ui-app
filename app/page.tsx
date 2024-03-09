@@ -2,6 +2,7 @@ import cn from 'classnames';
 import Image from "next/image";
 import { Text } from "@/components/Text/Text";
 import { Input } from '@/components/Input';
+import { Button } from '@/components/Button';
 
 export default function Home() {
   return (
@@ -23,9 +24,9 @@ export default function Home() {
           <Input label="Password" placeholder="Password" />
         </div>
         <div className="flex flex-col items-center space-y-4">
-          <button className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+          <Button variant="filled" fullWidth>
             Sign up
-          </button>
+          </Button>
           <div className="flex items-center my-4 w-full">
             <div className="bg-gray-300 h-px flex-grow"></div>
             <span className="flex-shrink mx-4 text-gray-600">OR</span>
