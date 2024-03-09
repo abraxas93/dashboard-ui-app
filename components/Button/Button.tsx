@@ -10,8 +10,13 @@ import cn from 'classnames'
 
 export type ButtonVariant = 'clear' | 'outline' | 'filled';
 export type ButtonColor = 'normal' | 'success' | 'error';
-
 export type ButtonSize = 'm' | 'l' | 'xl';
+
+const varianStyles: Record<ButtonVariant, string> = {
+  filled: 'bg-primary text-white',
+  outline: 'border border-primary text-primary',
+  clear: 'text-primary',
+}
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string;
@@ -54,9 +59,9 @@ const Button = forwardRef(
         {...otherProps}
         ref={ref}
     >
-        <div className={cls.addonLeft}>{addonLeft}</div>
+        <div className="flex">{addonLeft}</div>
         {children}
-        <div className={cls.addonRight}>{addonRight}</div>
+        <div className="flex">{addonRight}</div>
     </button>
   );
 });
