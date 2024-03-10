@@ -11,19 +11,19 @@ export const Header = () => {
         </div>
         <div className="mx-4 flex-1">
           <div className="relative">
-            <Image src="https://icons.getbootstrap.com/assets/icons/search.svg" alt="search" className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 transform" />
+            <Image src="search.svg" width={50} height={50} alt="search" className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 transform" />
             <input type="search" className="w-full rounded-lg border-gray-300 bg-gray-100 px-9 py-2" placeholder="Search" />
           </div>
         </div>
         <div className="flex items-center">
           <a className="">
-            <Image src="https://icons.getbootstrap.com/assets/icons/chat.svg" alt="chat" className="mx-3 h-6 w-6" />
+            <Image width={50} height={50} src="https://icons.getbootstrap.com/assets/icons/chat.svg" alt="chat" className="mx-3 h-6 w-6" />
           </a>
           <a>
-            <Image src="https://icons.getbootstrap.com/assets/icons/bell.svg" alt="notifications" className="mx-3 h-6 w-6" />
+            <Image width={50} height={50} src="https://icons.getbootstrap.com/assets/icons/bell.svg" alt="notifications" className="mx-3 h-6 w-6" />
           </a>
           <a>
-            <Image src="https://picsum.photos/id/237/50/50" alt="profile" className="mx-3 h-8 w-8 rounded-full" />
+            <Image width={50} height={50} src="https://picsum.photos/id/237/50/50" alt="profile" className="mx-3 h-8 w-8 rounded-full" />
           </a>
         </div>
       </div>
