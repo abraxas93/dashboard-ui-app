@@ -25,6 +25,7 @@ const sizeStyles: Record<ButtonSize, string> = {
   xl: 'text-xl', 
 }
 
+// @deprecated
 const colorStyles: Record<ButtonColor, string> = {
   normal: 'bg-blue-500 text-white',
   success: 'bg-green-500 text-white',

@@ -1,4 +1,3 @@
-import cn from 'classnames';
 import Image from "next/image";
 import { Text } from "@/components/Text/Text";
 import { Input } from '@/components/Input';
@@ -9,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex justify-center items-center h-screen">
       <div className="flex flex-col w-80 gap-3">
-        <div className="card-header flex items-center flex-col gap-2">
+        <div className="flex items-center flex-col gap-2">
           <Image
             src="/ai.svg"
             alt="Next.js Logo"
@@ -38,7 +37,6 @@ export default function Home() {
             By clicking continue, you agree to our <a href="#" className="underline">Terms of Service</a> and <a href="#" className="underline">Privacy Policy</a>.
           </div>
         </div>
-
       </div>
     </main>
   );
