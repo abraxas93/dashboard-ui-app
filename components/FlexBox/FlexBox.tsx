@@ -6,7 +6,7 @@ type DivProps = DetailedHTMLProps<
     HTMLDivElement
 >;
 
-interface FlexBoxProps extends DivProps {
+export interface FlexBoxProps extends DivProps {
   children: React.ReactNode,
   className?: string,
 }
