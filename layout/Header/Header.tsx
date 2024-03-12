@@ -30,7 +30,7 @@ export const Header = () => {
             </a>
           </div>
         </FlexBox>
-        <div className="h-18 box-border px-5 flex space-x-8">
+        <div className="h-18 box-border flex space-x-8">
           <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black" aria-current="page">Community</Link>
           <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">classNameroom</Link>
           <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Calendar</Link>
