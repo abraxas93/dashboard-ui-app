@@ -20,13 +20,13 @@ export const Header = () => {
           </div>
           <div className="flex items-center">
             <a className="">
-              <Image width={50} height={50} src="https://icons.getbootstrap.com/assets/icons/chat.svg" alt="chat" className="mx-3 h-6 w-6" />
+              <Image width={25} height={25} src="https://icons.getbootstrap.com/assets/icons/chat.svg" alt="chat" className="mx-3 h-6 w-6" />
             </a>
             <a>
-              <Image width={50} height={50} src="https://icons.getbootstrap.com/assets/icons/bell.svg" alt="notifications" className="mx-3 h-6 w-6" />
+              <Image width={25} height={25} src="https://icons.getbootstrap.com/assets/icons/bell.svg" alt="notifications" className="mx-3 h-6 w-6" />
             </a>
             <a>
-              <Image width={50} height={50} src="https://picsum.photos/id/237/50/50" alt="profile" className="mx-3 h-8 w-8 rounded-full" />
+              <Image width={25} height={25} src="https://picsum.photos/id/237/50/50" alt="profile" className="mx-3 h-8 w-8 rounded-full" />
             </a>
           </div>
         </FlexBox>
