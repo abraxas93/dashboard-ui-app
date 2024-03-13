@@ -1,7 +1,11 @@
 import Image from "next/image";
-import { useState } from "react";
+import { FC, useState } from "react";
 
-export const Search = () => {
+type SearchProps = { 
+  onSearch: (event: React.KeyboardEvent<HTMLInputElement>, searchQuery: string) => void;
+}
+
+export const Search: FC<SearchProps> = (props) => {
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
