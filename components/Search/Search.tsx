@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FC, useState } from "react";
 
 type SearchProps = { 
-  onSearch: (event: React.KeyboardEvent<HTMLInputElement>, searchQuery: string) => void;
+  onSearch?: (event: React.KeyboardEvent<HTMLInputElement>, searchQuery: string) => void;
 }
 
 export const Search: FC<SearchProps> = (props) => {
@@ -15,8 +15,7 @@ export const Search: FC<SearchProps> = (props) => {
   const handleSearch = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter') {
       event.preventDefault();
-      console.log('Searching for:', searchQuery);
-      // Add your search logic here
+      props.onSearch && props.onSearch(event, searchQuery);
     }
   };
 
