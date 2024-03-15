@@ -16,15 +16,15 @@ export const Header = () => {
           <div className="mx-4 flex-1">
             <Search />
           </div>
-          <FlexBox className="flex items-center">
+          <FlexBox className="flex items-center gap-2">
             <a className="">
-              <Image width={25} height={25} src="https://icons.getbootstrap.com/assets/icons/chat.svg" alt="chat" className="mx-3 h-6 w-6" />
+              <Image width={25} height={25} src="https://icons.getbootstrap.com/assets/icons/chat.svg" alt="chat" />
             </a>
             <a>
-              <Image width={25} height={25} src="https://icons.getbootstrap.com/assets/icons/bell.svg" alt="notifications" className="mx-3 h-6 w-6" />
+              <Image width={25} height={25} src="https://icons.getbootstrap.com/assets/icons/bell.svg" alt="notifications" />
             </a>
             <a>
-              <Image width={25} height={25} src="https://picsum.photos/id/237/50/50" alt="profile" className="mx-3 h-8 w-8 rounded-full" />
+              <Image width={25} height={25} src="https://picsum.photos/id/237/50/50" alt="profile" className="rounded-full" />
             </a>
           </FlexBox>
         </FlexBox>
