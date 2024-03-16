@@ -9,7 +9,17 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="flex">
+        <div className="left-col">
+          <div className="card">
+
+          </div>
+        </div>
+        <div className="right-col">
+          <div className="widget">
+
+          </div>
+        </div>
       </main>
     </>
   );
