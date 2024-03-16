@@ -8,7 +8,7 @@ import { Search } from "@/components/Search";
 export const Header = () => {
   return (
     <FlexBoxColumn className="items-center bg-white shadow w-full">
-      <div className="pt-4">
+      <div className="pt-4 w-6/12">
         <FlexBox className="items-center gap-3">
           <FlexBox className="items-center">
             <span className="text-lg font-bold">ChatGPT Mastery</span>
