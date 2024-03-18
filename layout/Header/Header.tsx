@@ -3,6 +3,16 @@ import Link from "next/link";
 import { FlexBoxColumn } from "@/components/FlexBoxColumn";
 import { FlexBox } from "@/components/FlexBox";
 import { Search } from "@/components/Search";
+import { Navbar } from "./Navbar";
+
+const navLinks = [
+  { href: "#", label: "Posts" },
+  { href: "#", label: "Prompts" },
+  { href: "#", label: "Documents" },
+  { href: "#", label: "Comments" },
+  { href: "#", label: "Leaderboards" },
+  { href: "#", label: "About" },
+];
 
 
 export const Header = () => {
@@ -28,26 +38,7 @@ export const Header = () => {
             </a>
           </FlexBox>
         </FlexBox>
-        <FlexBox className="h-18 box-border flex-wrap">
-          <div className="flex flex-grow">
-            <Link href="#" className="items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black" aria-current="page">Posts</Link>
-          </div>
-          <div className="flex flex-grow">
-            <Link href="#" className="items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Prompts</Link>
-          </div>
-          <div className="flex flex-grow">
-            <Link href="#" className="items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Documents</Link>
-          </div>
-          <div className="flex flex-grow">
-            <Link href="#" className="items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Comments</Link>
-          </div>
-          <div className="flex flex-grow">
-            <Link href="#" className="items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Leaderboards</Link>
-          </div>
-          <div className="flex flex-grow">
-            <Link href="#" className="items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">About</Link>
-          </div>
-        </FlexBox>
+        <Navbar links={navLinks}/>
       </FlexBoxColumn>
     </FlexBoxColumn>
   )

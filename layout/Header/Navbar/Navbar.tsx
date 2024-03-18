@@ -20,9 +20,9 @@ const NavLink = ({ href, label, ...otherProps }: NavLinkProps) => (
   </div>
 );
 
-const Navbar: FC<NavLinkProps[]> = (props) => (
+export const Navbar: FC<{ links: NavLinkProps[]}> = (props) => (
   <FlexBox className="h-18 box-border flex-wrap">
-    {props.map((linkProps, index) => (
+    {props.links.map((linkProps, index) => (
       <NavLink key={index} {...linkProps} />
     ))}
   </FlexBox>
