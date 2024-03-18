@@ -28,13 +28,13 @@ export const Header = () => {
             </a>
           </FlexBox>
         </FlexBox>
-        <FlexBox className="h-18 box-border space-x-8">
-          <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black" aria-current="page">Posts</Link>
-          <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Prompts</Link>
-          <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Documents</Link>
-          <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Comments</Link>
-          <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Leaderboards</Link>
-          <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">About</Link>
+        <FlexBox className="h-18 box-border flex-wrap">
+          <Link href="#" className="flex-grow items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black" aria-current="page">Posts</Link>
+          <Link href="#" className="flex-grow items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Prompts</Link>
+          <Link href="#" className="flex-grow items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Documents</Link>
+          <Link href="#" className="flex-grow items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Comments</Link>
+          <Link href="#" className="flex-grow items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Leaderboards</Link>
+          <Link href="#" className="flex-grow items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">About</Link>
         </FlexBox>
       </FlexBoxColumn>
     </FlexBoxColumn>
