@@ -8,7 +8,7 @@ import { Search } from "@/components/Search";
 export const Header = () => {
   return (
     <FlexBoxColumn className="items-center bg-white shadow w-full">
-      <div className="pt-4 w-6/12">
+      <FlexBoxColumn className="pt-4 w-6/12">
         <FlexBox className="items-center gap-3">
           <FlexBox className="items-center">
             <span className="text-lg font-bold">ChatGPT Mastery</span>
@@ -32,11 +32,11 @@ export const Header = () => {
           <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black" aria-current="page">Posts</Link>
           <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Prompts</Link>
           <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Documents</Link>
-          <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Members</Link>
+          <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Comments</Link>
           <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">Leaderboards</Link>
           <Link href="#" className="inline-flex items-center border-b-4 border-transparent py-5 text-base font-medium text-gray-500 hover:border-black hover:text-black">About</Link>
         </FlexBox>
-      </div>
+      </FlexBoxColumn>
     </FlexBoxColumn>
   )
 }
