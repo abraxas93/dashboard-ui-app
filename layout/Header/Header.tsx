@@ -27,15 +27,15 @@ export const Header = () => {
             <Search />
           </div>
           <FlexBox className="flex items-center gap-3">
-            <a className="">
+            <Link href={'/'}>
               <Image width={25} height={25} src="https://icons.getbootstrap.com/assets/icons/chat.svg" alt="chat" />
-            </a>
-            <a>
+            </Link>
+            <Link href={'/'}>
               <Image width={25} height={25} src="https://icons.getbootstrap.com/assets/icons/bell.svg" alt="notifications" />
-            </a>
-            <a>
+            </Link>
+            <Link href={'/'}>
               <Image width={25} height={25} src="https://picsum.photos/id/237/50/50" alt="profile" className="rounded-full" />
-            </a>
+            </Link>
           </FlexBox>
         </FlexBox>
         <Navbar links={navLinks}/>
