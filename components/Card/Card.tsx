@@ -1,5 +1,7 @@
 import cn from "classnames";
 import { DetailedHTMLProps, FC, HTMLAttributes } from "react"
+import { FlexBox } from "../FlexBox";
+import { FlexBoxColumn } from "../FlexBoxColumn";
 
 type DivProps = DetailedHTMLProps<
     HTMLAttributes<HTMLDivElement>,
@@ -34,14 +36,21 @@ const CardFooter: FC<CardFooterProps> = ({ children }) => {
 export interface CardProps extends DivProps {
   children: React.ReactNode,
   className?: string,
+  Header: typeof CardHeader,
+  Body: typeof CardBody,
+  Footer: typeof CardFooter,
 }
 
 export const Card: FC<CardProps> & {
   Header: typeof CardHeader;
   Body: typeof CardBody;
   Footer: typeof CardFooter;
-} = ({ children }) => {
-  return <div className="card">{children}</div>;
+} = ({ children, className, ...props }) => {
+  return (
+    <FlexBoxColumn className={cn('w-full', className)} {...props}>
+      {children}
+    </FlexBoxColumn>
+  )
 };
 
 Card.Header = CardHeader;

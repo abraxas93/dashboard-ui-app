@@ -6,14 +6,14 @@ export default function Home() {
     <>
       <Header />
       <main className="flex">
-        <div className="left-col">
+        <div className="left-col w-3/5">
           <Card>
             <Card.Header>Card Header</Card.Header>
             <Card.Body>Card Body</Card.Body>
             <Card.Footer>Card Footer</Card.Footer>
           </Card>
         </div>
-        <div className="right-col">
+        <div className="right-col w-2/5">
           <div className="widget">
             
           </div>
