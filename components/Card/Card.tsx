@@ -44,7 +44,6 @@ export const Card: FC<CardProps> & {
   return <div className="card">{children}</div>;
 };
 
-// Assign subcomponents to the main component
 Card.Header = CardHeader;
 Card.Body = CardBody;
 Card.Footer = CardFooter;

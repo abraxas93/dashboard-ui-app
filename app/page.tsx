@@ -7,7 +7,11 @@ export default function Home() {
       <Header />
       <main className="flex">
         <div className="left-col">
-          <Card />
+          <Card>
+            <Card.Header>Card Header</Card.Header>
+            <Card.Body>Card Body</Card.Body>
+            <Card.Footer>Card Footer</Card.Footer>
+          </Card>
         </div>
         <div className="right-col">
           <div className="widget">
