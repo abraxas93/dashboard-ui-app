@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Header />
       <main className="flex">
-        <div className="left-col w-3/5">
+        <div className="left-col w-3/5 p-3">
           <Card>
             <Card.Header>
               <div className="font-bold text-xl mb-2 flex justify-between items-center">
@@ -23,12 +23,12 @@ export default function Home() {
                 </div>
               </div>
             </Card.Header>
-            <Card.Body>
+            <Card.Body className="px-3">
               <p className="text-gray-700 text-base mb-4">
                 Welcome to the ChatGPT Mastery course and community! Watch the video below to learn how to navigate around and get started!
               </p>
             </Card.Body>
-            <Card.Footer className="px-6 pt-4 pb-2">
+            <Card.Footer className="px-3 pt-4 pb-2">
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">👍 35</span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">💬 18</span>
               <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">Last comment 9d ago</span>

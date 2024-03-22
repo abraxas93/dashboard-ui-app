@@ -20,8 +20,8 @@ export interface CardBodyProps extends DivProps {
   children: React.ReactNode,
   className?: string,
 }
-const CardBody: FC<CardBodyProps> = ({ children }) => {
-  return <div className="card-body">{children}</div>;
+const CardBody: FC<CardBodyProps> = ({ children, className }) => {
+  return <div className={cn(className)}>{children}</div>;
 };
 
 export interface CardFooterProps extends DivProps {
