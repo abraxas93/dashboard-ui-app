@@ -36,9 +36,6 @@ const CardFooter: FC<CardFooterProps> = ({ children }) => {
 export interface CardProps extends DivProps {
   children: React.ReactNode,
   className?: string,
-  Header: typeof CardHeader,
-  Body: typeof CardBody,
-  Footer: typeof CardFooter,
 }
 
 export const Card: FC<CardProps> & {
@@ -47,7 +44,7 @@ export const Card: FC<CardProps> & {
   Footer: typeof CardFooter;
 } = ({ children, className, ...props }) => {
   return (
-    <FlexBoxColumn className={cn('w-full', className)} {...props}>
+    <FlexBoxColumn className={cn('w-full bg-white shadow', className)} {...props}>
       {children}
     </FlexBoxColumn>
   )
