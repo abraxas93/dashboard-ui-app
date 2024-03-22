@@ -29,8 +29,8 @@ export interface CardFooterProps extends DivProps {
   className?: string,
 }
 
-const CardFooter: FC<CardFooterProps> = ({ children }) => {
-  return <div className="card-footer">{children}</div>;
+const CardFooter: FC<CardFooterProps> = ({ children, className }) => {
+  return <div className={cn(className)}>{children}</div>;
 };
 
 export interface CardProps extends DivProps {
