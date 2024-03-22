@@ -10,7 +10,11 @@ export default function Home() {
           <Card>
             <Card.Header>Card Header</Card.Header>
             <Card.Body>Card Body</Card.Body>
-            <Card.Footer>Card Footer</Card.Footer>
+            <Card.Footer>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">👍 35</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">💬 18</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">Last comment 9d ago</span>
+            </Card.Footer>
           </Card>
         </div>
         <div className="right-col w-2/5">
