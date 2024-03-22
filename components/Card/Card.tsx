@@ -12,8 +12,8 @@ export interface CardHeaderProps extends DivProps {
   children: React.ReactNode,
   className?: string,
 }
-const CardHeader: FC<CardHeaderProps> = ({ children }) => {
-  return <div className="card-header">{children}</div>;
+const CardHeader: FC<CardHeaderProps> = ({ children, className }) => {
+  return <div className={cn(className)}>{children}</div>;
 };
 
 export interface CardBodyProps extends DivProps {

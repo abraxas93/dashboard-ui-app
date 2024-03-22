@@ -9,7 +9,7 @@ export default function Home() {
       <main className="flex">
         <div className="left-col w-3/5 p-3">
           <Card>
-            <Card.Header>
+            <Card.Header className="px-3">
               <div className="font-bold text-xl mb-2 flex justify-between items-center">
                 <div className="flex items-center">
                   <Image className="w-10 h-10 rounded-full mr-4" src="https://picsum.photos/id/237/50/50" alt="Avatar of Drake Surach" width={50} height={50} />
