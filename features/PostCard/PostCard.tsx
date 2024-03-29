@@ -1,7 +1,12 @@
 import { Card } from "@/components/Card";
 import Image from "next/image";
+import { FC } from "react";
 
-export const PostCard = () => {
+export type PostCardProps = {
+  content: string;
+}
+
+export const PostCard: FC<PostCardProps> = (props) => {
   return (
     <Card className="p-3 rounded">
       <Card.Header>
