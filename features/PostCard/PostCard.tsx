@@ -7,6 +7,7 @@ export type PostCardProps = {
 }
 
 export const PostCard: FC<PostCardProps> = (props) => {
+  const {content} = props;
   return (
     <Card className="p-3 rounded">
       <Card.Header>
@@ -25,7 +26,7 @@ export const PostCard: FC<PostCardProps> = (props) => {
       </Card.Header>
       <Card.Body>
         <p className="text-gray-700 text-base mb-4">
-          Welcome to the ChatGPT Mastery course and community! Watch the video below to learn how to navigate around and get started!
+          {content}
         </p>
       </Card.Body>
       <Card.Footer className="flex items-center gap-2">
