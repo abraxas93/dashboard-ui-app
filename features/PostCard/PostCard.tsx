@@ -11,7 +11,7 @@ export const PostCard: FC<PostCardProps> = (props) => {
   return (
     <Card className="p-3 rounded">
       <Card.Header>
-        <div className="font-bold text-xl mb-2 flex justify-between items-center">
+        <div className="font-bold text-xl mb-2 flex flex-col justify-between gap-2">
           <div className="flex items-center">
             <Image className="w-10 h-10 rounded-full mr-4" src="https://picsum.photos/id/237/50/50" alt="Avatar of Drake Surach" width={50} height={50} />
             <div className="text-sm">
