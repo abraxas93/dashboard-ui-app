@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Card } from "@/components/Card";
 import { Header } from "@/layout/Header";
-import { PostCard } from "@/features/PostCard/PostCard";
+import { PostCard } from "@/features/PostCard";
 
 export default function Home() {
   return (
