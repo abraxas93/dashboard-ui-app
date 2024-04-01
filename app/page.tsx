@@ -9,7 +9,8 @@ export default function Home() {
       <Header />
       <main className="flex">
         <div className="left-col w-3/5 p-3">
-          <PostCard />
+          <PostCard content="Typical Challenges: Ensuring application scalability and maintainability, and developing team skills.
+- Current Projects: Building a design system, refactoring the existing codebase, developing new React-based features."/>
         </div>
         <div className="right-col w-2/5">
           <div className="widget">
