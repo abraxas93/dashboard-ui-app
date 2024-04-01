@@ -20,9 +20,9 @@ export const PostCard: FC<PostCardProps> = (props) => {
               <p className="text-gray-600">Jul &apos;23 in General 🌐</p>
             </div>
           </FlexBox>
-          <div className="flex items-center">
+          <FlexBox className="flex items-center">
             <span className="inline-block bg-blue-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 mr-2">Getting Started ✔️</span>
-          </div>
+          </FlexBox>
         </div>
       </Card.Header>
       <Card.Body>
