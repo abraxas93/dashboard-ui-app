@@ -3,8 +3,12 @@ import { FlexBox } from "@/components/FlexBox";
 import Image from "next/image";
 import { FC } from "react";
 
+
+
 export type PostCardProps = {
   content?: string;
+  likes: number;
+  comments: number;
 }
 
 export const PostCard: FC<PostCardProps> = (props) => {
