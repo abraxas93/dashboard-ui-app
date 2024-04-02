@@ -13,7 +13,7 @@ export type PostCardProps = {
 }
 
 export const PostCard: FC<PostCardProps> = (props) => {
-  const {content} = props;
+  const {content, likes, comments, lastCommentDate} = props;
   return (
     <Card className="p-3 rounded">
       <Card.Header>
@@ -36,9 +36,9 @@ export const PostCard: FC<PostCardProps> = (props) => {
         </p>
       </Card.Body>
       <Card.Footer className="flex items-center gap-2">
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">👍 35</span>
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">💬 18</span>
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">Last comment 9d ago</span>
+        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">👍 {likes}</span>
+        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">💬 {comments}</span>
+        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">Last comment {lastCommentDate} ago</span>
       </Card.Footer>
     </Card>
   )
