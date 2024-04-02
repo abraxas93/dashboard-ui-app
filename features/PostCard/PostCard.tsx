@@ -9,6 +9,7 @@ export type PostCardProps = {
   content?: string;
   likes: number;
   comments: number;
+  lastCommentDate: string;
 }
 
 export const PostCard: FC<PostCardProps> = (props) => {
