@@ -15,7 +15,7 @@ export type PostCardProps = {
 export const PostCard: FC<PostCardProps> = (props) => {
   const {content, likes, comments, lastCommentDate} = props;
   return (
-    <Card className="p-3 rounded">
+    <Card className="p-3 rounded gap-2">
       <Card.Header>
         <div className="font-bold text-xl mb-2 flex flex-col justify-between gap-2">
           <FlexBox className="items-center gap-2">
