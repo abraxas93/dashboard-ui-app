@@ -36,9 +36,9 @@ export const PostCard: FC<PostCardProps> = (props) => {
         </p>
       </Card.Body>
       <Card.Footer className="flex items-center gap-2">
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">👍 {likes}</span>
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">💬 {comments}</span>
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">Last comment {lastCommentDate} ago</span>
+        <span className="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-700">👍 {likes}</span>
+        <span className="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-700">💬 {comments}</span>
+        <span className="inline-block  rounded-full px-3 py-1 text-sm font-semibold text-gray-700">Last comment {lastCommentDate} ago</span>
       </Card.Footer>
     </Card>
   )
