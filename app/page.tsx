@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex">
+      <main className="flex px-7">
         <div className="left-col w-3/5 p-3">
           <PostCard 
             content="Typical Challenges: Ensuring application scalability and maintainability, and developing team skills.
