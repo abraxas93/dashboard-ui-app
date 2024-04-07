@@ -1,5 +1,6 @@
 import { Card } from "@/components/Card";
 import { FlexBox } from "@/components/FlexBox";
+import { FlexBoxColumn } from "@/components/FlexBoxColumn";
 import Image from "next/image";
 import { FC } from "react";
 
@@ -17,7 +18,7 @@ export const PostCard: FC<PostCardProps> = (props) => {
   return (
     <Card className="p-3 rounded gap-2">
       <Card.Header>
-        <div className="font-bold text-xl mb-2 flex flex-col justify-between gap-2">
+        <FlexBoxColumn className="font-bold text-xl mb-2 justify-between gap-2">
           <FlexBox className="items-center gap-2">
             <Image className="w-10 h-10 rounded-full mr-4" src="https://picsum.photos/id/237/50/50" alt="Avatar of Drake Surach" width={50} height={50} />
             <div className="text-sm">
@@ -28,7 +29,7 @@ export const PostCard: FC<PostCardProps> = (props) => {
           <FlexBox className="flex items-center">
             <span className="inline-block bg-blue-200 rounded-full px-3 py-1 text-sm font-semibold text-blue-700 mr-2">Getting Started ✔️</span>
           </FlexBox>
-        </div>
+        </FlexBoxColumn>
       </Card.Header>
       <Card.Body>
         <p className="text-gray-700 text-base mb-4">
