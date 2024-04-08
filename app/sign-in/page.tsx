@@ -1,10 +1,11 @@
+'use server';
 import Image from "next/image";
 import { Text } from "@/components/Text/Text";
 import { Input } from '@/components/Input';
 import { Button } from '@/components/Button';
 import { HLine } from '@/components/HLine';
 
-export default function SignIn() {
+export default async function SignIn() {
   return (
     <main className="flex justify-center items-center h-screen">
       <div className="flex flex-col w-80 gap-3">
