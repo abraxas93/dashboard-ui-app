@@ -9,7 +9,7 @@ import { FlexBoxColumn } from "@/components/FlexBoxColumn";
 export default async function SignIn() {
   return (
     <main className="flex justify-center items-center h-screen">
-      <FlexBoxColumn className="flex flex-col w-80 gap-3">
+      <FlexBoxColumn className="w-80 gap-3">
         <div className="flex items-center flex-col gap-2">
           <Image
             src="/ai.svg"
