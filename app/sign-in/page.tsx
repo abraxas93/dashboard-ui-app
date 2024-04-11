@@ -21,10 +21,10 @@ export default async function SignIn() {
           <Text title="Sign in to your account" className='text-lg font-semibold pt-2'></Text>
           <Text text="Dont have an account?" className='text-gray-500 text-sm'></Text>
         </div>
-        <div className="flex flex-col w-full gap-3">
+        <FlexBoxColumn className="w-full gap-3">
           <Input label="Email" placeholder="you@example.com" className="text-sm"/>
           <Input label="Password" placeholder="Password" className="text-sm"/>
-        </div>
+        </FlexBoxColumn>
         <div className="flex flex-col items-center space-y-4">
           <Button variant="filled" size='s' fullWidth>
             Sign up
