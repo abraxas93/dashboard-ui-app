@@ -25,7 +25,7 @@ export default async function SignIn() {
           <Input label="Email" placeholder="you@example.com" className="text-sm"/>
           <Input label="Password" placeholder="Password" className="text-sm"/>
         </FlexBoxColumn>
-        <div className="flex flex-col items-center space-y-4">
+        <FlexBoxColumn className="flex flex-col items-center space-y-4">
           <Button variant="filled" size='s' fullWidth>
             Sign up
           </Button>
@@ -38,7 +38,7 @@ export default async function SignIn() {
           <div className="text-center text-sm text-gray-500">
             By clicking continue, you agree to our <a href="#" className="underline">Terms of Service</a> and <a href="#" className="underline">Privacy Policy</a>.
           </div>
-        </div>
+        </FlexBoxColumn>
       </FlexBoxColumn>
     </main>
   );
