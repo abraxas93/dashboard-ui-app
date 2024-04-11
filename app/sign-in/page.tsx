@@ -5,12 +5,13 @@ import { Input } from '@/components/Input';
 import { Button } from '@/components/Button';
 import { HLine } from '@/components/HLine';
 import { FlexBoxColumn } from "@/components/FlexBoxColumn";
+import { FlexBox } from "@/components/FlexBox";
 
 export default async function SignIn() {
   return (
     <main className="flex justify-center items-center h-screen">
       <FlexBoxColumn className="w-80 gap-3">
-        <div className="flex items-center flex-col gap-2">
+        <FlexBox className="flex items-center flex-col gap-2">
           <Image
             src="/ai.svg"
             alt="Next.js Logo"
@@ -20,7 +21,7 @@ export default async function SignIn() {
           />
           <Text title="Sign in to your account" className='text-lg font-semibold pt-2'></Text>
           <Text text="Dont have an account?" className='text-gray-500 text-sm'></Text>
-        </div>
+        </FlexBox>
         <FlexBoxColumn className="w-full gap-3">
           <Input label="Email" placeholder="you@example.com" className="text-sm"/>
           <Input label="Password" placeholder="Password" className="text-sm"/>
